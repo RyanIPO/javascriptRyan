@@ -1,6 +1,6 @@
 # javascriptRyan
 #####冒泡排序
-` `` javascript
+```javascript
 	<script>
 	// 一组数据，从小到大排列
 	var array = [9,5,22,3,100]
@@ -18,4 +18,4 @@
 	}
 	console.log(array);
 	</script>
-` `` javascript
+```javascript
