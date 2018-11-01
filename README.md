@@ -18,4 +18,3 @@
 	}
 	console.log(array);
 	</script>
-```javascript
