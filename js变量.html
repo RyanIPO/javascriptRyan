@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    
+    <script>
+    /*
+    ---变量的命名规范和规则---
+	规则-必须遵守
+		由字母、数字、下划线、$符号组成
+		不能以数字开头
+		不能是关键字和保留字
+		区分大小写
+	规范-建议遵守
+		有意义的变量名
+		驼峰命名法\
+
+	---变量的数据类型---
+	js原始数据类型：numbe，string，Boolean，null，undefined，object
+
+	number：整数和小数  NaN--not an number
+	string："some"
+	Boolean：true false
+	null：空类型 null 一个对象指向为空，此时可以复制为null
+	undefined：未定义 undefined 1.变量声明没有赋值 2.函数没有明确返回值，如果接收了，结果也是undefined
+	object：对象
+	*/
+    /*
+    >>使用typeof 来获取变量的数据类型
+    typeof 变量名
+    */
+    // var num = 10;
+    // var str = "ryan";
+    // var flag = true;
+    // var nll = null;
+    // var undef = undefined;
+    // var obj = new Object();
+    // //使用typeof
+    // console.log(typeof num); //number
+    // console.log(typeof str); //string
+    // console.log(typeof flag); //boolean
+    // console.log(typeof nll); //object,不是null(理解空的含义)
+    // console.log(String(nll)); //null
+    // console.log(typeof undef); //undefined
+    // console.log(typeof obj); //object
+    </script>
+    <script>
+    	//js 八进制以0开头
+    	//js 十六进制以0x开头
+    // //数字有范围
+    // console.log(Number.MAX_VALUE);
+    // console.log(Number.MIN_VALUE);
+    //Infinity无穷大
+    //-Infinity无穷小
+    //不要用小数验证小数
+    // var x=0.1;
+    // var y=0.2;
+    // var sum=x+y;
+    // console.log(sum);
+    // console.log(sum==0.3);//false
+    // 
+    // 不要用NaN验证是不是数字
+    // var nna;
+    // console.log(nna+10==NaN);//false
+    // 应该使用isNaN（变量名）验证是不是数字
+    // var num;
+    // console.log(isNaN(num));//true 不是一个数字
+    //只要是数字 则false
+    </script>
+    <script>
+        var a = 1;
+        //        2     3     3     5
+        var b = ++a + ++a + a++ + ++a;
+        //        2     3     4     5
+        console.log(b);//13
+        
+    </script>
+</body>
+
+</html>
