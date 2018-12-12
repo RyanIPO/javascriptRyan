@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+    //创建对象有三种方式
+    /**
+     * 1.调用系统的构造函数创建对象
+     * var 变量名= new Object();
+     * 
+     * 2.自定义构造函数创建对象（结合第一种和需求通过工厂模式创建对象）
+     * 3.字面量创建对象
+     */
+    </script>
+    <!--工厂模式创建对象 -->
+    <script type="text/javascript">
+    function createObj(name, age) {
+        var obj = new Object();
+        obj.name = name;
+        obj.age = age;
+
+        return obj;
+    }
+    //创建对象
+    var p1 = createObj("小明", 20);
+    var p2 = createObj("小红", 18);
+    console.log(p1.name);
+    console.log(p1.age);
+    console.log(p2.name);
+    console.log(p2.age);
+    </script>
+    //
+    //
+    //
+    <!--自定义构造函数创建对象 -->
+    <script type="text/javascript">
+    //构造函数用来创建对象
+    //函数用来调用
+    //-------------------构造函数与函数的区别之处在于首字母是否大写-----------
+    function Person(name, age) {//自定义构造函数
+        this.name = name;
+        this.age = age;
+        this.sayHi = function() {
+            console.log("my name is " + this.name + ",age is " + this.age)
+        }
+    }
+    //自定义构造函数--创建对象
+    var p1 = new Person("小狗", 101);
+    /**
+     * 1.申请内存，存储创建的新对象
+     * 2.把this设置为当前的新对象
+     * 3.设置对象的属性和方法
+     * 4.把this这个对象返回
+     */
+    console.log(p1.name);
+    console.log(p1.age);
+    p1.sayHi();
+
+    var p2 = new Person("小猪", 102);
+    console.log(p2.name);
+    console.log(p2.age);
+    p2.sayHi();
+    </script>
+    <!--字面量创建对象--》一次性的对象-->
+    <script type="text/javascript">
+    var obj={};
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

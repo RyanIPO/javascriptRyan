@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+    //json也是一个对象，数据都是成对的，一般json格式的数据无论是键还是值都用双引号括起来；
+    //键值对之间用逗号隔开
+    var json = {
+        "name": "小狗",
+        "age": "12",
+        "sex": "男"
+    }
+    //遍历对象不能用for循环，他是无序的
+    //通过 for in 循环遍历对象
+    for(var key in json){
+    	console.log(key);//key 是一个变量，存储了对象属性的名字
+    	console.log(json[key]);
+    	console.log("===============================================");
+    	console.log(key+"="+json[key]);
+    }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

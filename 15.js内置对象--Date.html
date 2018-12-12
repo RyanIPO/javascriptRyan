@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Date</title>
+    <script type="text/javascript">
+    //创建实例对象
+    var date = new Date();
+    console.log(date);
+
+    console.log(Date.now()); //1970/1/1/00-00/------now  毫秒数
+
+    var date1 = new Date("2018/12/11")
+    console.log(date1);
+
+    var date2 = new Date("2018-12-11")
+    console.log(date2);
+    </script>
+    <script type="text/javascript">
+    var date = new Date();
+    //获取年份
+    console.log(date.getFullYear());//2018
+    //月份
+    console.log(date.getMonth() + 1); //12--从0（一月）开始到11 ，中国真实要加1
+    //日期
+    console.log(date.getDate());//11
+    //小时
+    console.log(date.getHours());//16
+    //分钟
+    console.log(date.getMinutes());//15
+    //秒
+    console.log(date.getSeconds());//17
+    //星期
+    console.log(date.getDay()); //2---------0(星期日) 1 2 3 4 5 6
+    </script>
+    <script type="text/javascript">
+    var dt = new Date();
+
+    console.log(dt.toString()); //Tue Dec 11 2018 16:02:47 GMT+0800 (中国标准时间)
+    console.log(dt.toLocaleString()); //2018/12/11 下午4:02:47
+
+    console.log(dt.toDateString()); //Tue Dec 11 2018
+    console.log(dt.toLocaleDateString()); //2018/12/11
+
+    console.log(dt.toTimeString());//16:08:59 GMT+0800 (中国标准时间)
+    console.log(dt.toLocaleTimeString());//下午4:08:59
+
+    console.log(dt.valueOf());//毫秒值
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

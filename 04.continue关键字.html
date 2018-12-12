@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+    //continue关键字：在循环中遇到continue，直接开始下一次循环
+    //
+    //求100-200之间所有的奇数的和
+    var sum = 0;
+    for (var i = 100; i <= 200; i++) {
+        if (i % 2 == 0) {
+            continue;
+        } else {
+            sum += i;
+        }
+    }
+    console.log(sum);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

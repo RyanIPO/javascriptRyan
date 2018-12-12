@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+    var array = [1, 3, 5, 7, 1, 5, 1, 7, 3];
+
+    var array1 = [100, 300];
+    var array2 = [200, 400];
+    var array3 = ["A", 'b', "4"];
+
+
+    console.log(Array.isArray(array)); //true--判断是否是数组
+    console.log(array instanceof Array); //true--判断是否是数组
+
+    console.log(Array.from(array)); //[1, 3, 5, 7, 1, 5, 1, 7, 3]--复制
+    console.log(array.concat(array1, array2)); //拼接
+    console.log(array.every(function(ele, index, array) { //true-方法测试数组的所有元素是否都通过了指定函数的测试。
+        console.log(ele);
+        console.log(index);
+        console.log(array);
+        return ele > 0;
+    })) //true
+
+    console.log(array.filter(function(ele, index, array) {
+        // [3, 5, 7, 5, 7, 3]--方法创建一个新数组, 其包含通过所提供函数实现的测试的所有元素。 
+        return ele > 1;
+    }));
+
+    console.log(array.push(1001)); //10--追加最后--返回长度
+    console.log(array.pop()); //删除最后--返回删除值
+
+    console.log(array.unshift(1002, 1003)); //11--追加最前--返回长度
+    console.log(array); //[1002, 1003, 1, 3, 5, 7, 1, 5, 1, 7, 3]
+    console.log(array.shift()); //删除第一个--返回删除值
+    console.log(array);
+    array.forEach(function(ele, index, array) { //遍历数组并执行函数体
+        console.log(ele + "----->" + index);
+    })
+    console.log(array);
+    //[1003, 1, 3, 5, 7, 1, 5, 1, 7, 3]
+    console.log(array.indexOf(7)); //4 --索引，没有返回-1
+    console.log(array.indexOf(10)); //4 --索引，没有返回-1
+
+    //var array3 = ["A",'b',"4"];
+    console.log(array3.join("|")); //A|b|4 --插入，返回字符串
+
+    //var array2 = [200, 400];
+    console.log(array2.map(Math.sqrt)); //[14.142135623730951, 20] 遍历执行函数体
+
+    console.log(array2.reverse()); //反转
+
+    console.log(array); // [1003, 1, 3, 5, 7, 1, 5, 1, 7, 3]
+    //冒泡排序，不稳定
+    console.log(array.sort()); // [1, 1, 1, 1003, 3, 3, 5, 5, 7, 7]---不稳定
+    //稳定写法，函数体固定写法
+    console.log(array.sort(function compare(a, b) { //[1, 1, 1, 3, 3, 5, 5, 7, 7, 1003]--稳定
+        if (a < b) { // 按某种排序标准进行比较, a 小于 b，
+            return -1;
+        }
+        if (a > b) {
+            return 1;
+        }
+        // a must be equal to b
+        return 0;
+    }));
+
+    //[1, 1, 1, 3, 3, 5, 5, 7, 7, 1003]
+    console.log(array.slice(3, 5)); //3,3---浅拷贝[3，5)
+    </script>
+    <script type="text/javascript">
+    var months = ['Jan', 'March', 'April', 'June'];
+    months.splice(1, 0, 'Feb');
+    // inserts at 1st index position
+    console.log(months);
+    // expected output: Array ['Jan', 'Feb', 'March', 'April', 'June']
+
+    months.splice(4, 1, 'May');
+    // replaces 1 element at 4th index
+    console.log(months);
+    // expected output: Array ['Jan', 'Feb', 'March', 'April', 'May']
+
+    months.splice(4, 1);
+    //删除 1 element at 4th index
+    console.log(months); // ["Jan", "Feb", "March", "April"]
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

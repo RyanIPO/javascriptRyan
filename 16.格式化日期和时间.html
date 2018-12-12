@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+    function getDate(date) {
+
+
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        var day = date.getDate();
+        var hour = date.getHours();
+        var minute = date.getMinutes();
+        var second = date.getSeconds();
+
+        //优化格式
+        month = month < 10 ? "0" + month : month;
+        day = day < 10 ? "0" + day : day;
+        hour = hour < 10 ? "0" + hour : hour;
+        minute = minute < 10 ? "0" + minute : minute;
+        second = second < 10 ? "0" + second : second;
+        //封装
+        // var array=[month,day,hour,minute,second]
+        // for(var i=0;i<array.length;i++){
+        // 	// array[i]=array[i]<10?"0"+array[i]:array[i];
+        // 	if(array[i]<10){
+        // 		array[i]="0"+array[i];
+        // 	}else{
+        // 		array[i]=array[i];
+        // 	}
+        // }
+
+
+        return year + "年" + month + "月" + day + "日 " + hour + ":" + minute + ":" + second;
+    }
+
+
+    console.log(getDate(new Date()));
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

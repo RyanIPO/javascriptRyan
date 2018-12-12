@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--预解析与函数表达式的坑-->
+    <script type="text/javascript">
+    f1(); //报错  f1 is not a function
+    var f1 = function() {
+        console.log(a);
+        var a = 1;
+    }
+    </script>
+    <!--上面报错的原因-->
+    <script type="text/javascript">
+    var f1;
+    f1(); //报错
+    f1 = function() {
+        console.log(a);
+        var a = 1;
+    }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
