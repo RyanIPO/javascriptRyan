@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="hello" id="button1">
+    <script type="text/javascript">
+    document.getElementById("button1").onclick = function() {
+        alert("who are you?");
+    }
+    </script>
+    <input type="button" value="pic" id="button2">
+    <img src="" alt="" id="im2">
+    <script type="text/javascript">
+    document.getElementById("button2").onclick = function() {
+        let im = document.getElementById("im2");
+        im.src = "images/1.jpg";
+        im.width = "200";
+        im.height = "200";
+    }
+    </script>
+    <input type="button" value="pWrite" id="button3">
+    <p id="p3">thanks</p>
+    <script type="text/javascript">
+    document.getElementById("button3").onclick = function() {
+        let p = document.getElementById("p3");
+        p.innerText = "very much";
+    }
+    </script>
+    <input type="button" value="link" id="button4">
+    <a href="" id="a4">email me</a>
+    <script type="text/javascript">
+    document.getElementById("button4").onclick = function() {
+        let a = document.getElementById("a4");
+        a.href = "https://www.jd.com/";
+        a.innerText = "jd";
+    }
+    </script>
+    <input type="button" value="ppp" id="button5">
+    <div id="div5">
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+    </div>
+    <script type="text/javascript">
+    document.getElementById("button5").onclick = function() {
+        var ppObj = document.getElementById("div5").getElementsByTagName("p");
+        for (var i = 0; i < ppObj.length; i++) {
+            ppObj[i].innerText = "who";
+        }
+    }
+    </script>
+    <input type="button" value="pic6" id="button6">
+    <img src="images/liuyan.jpg" alt="123" title="456" id="img6">
+    <script type="text/javascript">
+    document.getElementById("button6").onclick = function() {
+        let img6Obj = document.getElementById("img6");
+        img6Obj.alt = "789";
+        img6Obj.title = "999";
+    }
+    </script>
+</body>
+
+</html>
