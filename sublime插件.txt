@@ -1,8 +1,8 @@
-﻿Emmet
+==﻿Emmet
 基本的语法高亮等功能以及高端大气的快速代码编辑功能。
 View In Browser
 浏览器浏览
-html5
+==html5
 支持hmtl5规范的插件包
  jQuery
 支持JQuery规范的插件包
@@ -13,11 +13,11 @@ JS代码格式化插件。
 
 
 
-ChineseLocalizations
+==ChineseLocalizations
 汉化
- Doc​Blockr
+== Doc​Blockr
 注释插件，生成幽美的注释。标准的注释，包括函数名、参数、返回值等，并以多行显示，省去手动编写。
-SideBarEnhancements
+==SideBarEnhancements
 侧栏右键功能增强，非常实用
 ConvertToUTF8 
 转换成UTF8编码
@@ -26,7 +26,7 @@ LESS 插件
 AutoFileName 插件
 功能说明：自动补全文件(目录)名。
 
-SublimeCodeIntel 插件
+==SublimeCodeIntel 插件
      功能说明：智能提示。
    需要python 安装code
 HTML-CSS-JS Prettify 插件
