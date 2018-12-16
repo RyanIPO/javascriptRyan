@@ -23,7 +23,7 @@ ConvertToUTF8
 转换成UTF8编码
 LESS 插件
 功能说明：LESS语法高亮显示。
-AutoFileName 插件
+==AutoFileName 插件
 功能说明：自动补全文件(目录)名。
 
 ==SublimeCodeIntel 插件
@@ -36,14 +36,14 @@ LiveReload 插件
 CSScomb
 格式化css折叠或展开
 IMESupport
-支持中文打字的光标跟随
+支持中文打字的光标跟随(自己按)
 AutoPEP8（）
 格式化Python代码。
 
 
-Alignment
+--Alignment
 代码对齐，如写几个变量，选中这几行，Ctrl+Alt+A，哇，齐了。
-Ctags
+==Ctags
 函数跳转，我的电脑上是Alt+点击 函数名称，会跳转到相应的函数
 
 transparency 
