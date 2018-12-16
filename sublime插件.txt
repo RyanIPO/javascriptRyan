@@ -1,14 +1,14 @@
 ==﻿Emmet
 基本的语法高亮等功能以及高端大气的快速代码编辑功能。
-View In Browser
+--View In Browser
 浏览器浏览
 ==html5
 支持hmtl5规范的插件包
- jQuery
+==jQuery
 支持JQuery规范的插件包
-JSFormat
+--JSFormat
 JS代码格式化插件。
- BracketHighlighter
+==BracketHighlighter
 类似于代码匹配，可以匹配括号，引号等符号内的范围。
 
 
@@ -19,9 +19,9 @@ JS代码格式化插件。
 注释插件，生成幽美的注释。标准的注释，包括函数名、参数、返回值等，并以多行显示，省去手动编写。
 ==SideBarEnhancements
 侧栏右键功能增强，非常实用
-ConvertToUTF8 
+==ConvertToUTF8 
 转换成UTF8编码
-LESS 插件
+--LESS 插件
 功能说明：LESS语法高亮显示。
 ==AutoFileName 插件
 功能说明：自动补全文件(目录)名。
@@ -29,15 +29,15 @@ LESS 插件
 ==SublimeCodeIntel 插件
      功能说明：智能提示。
    需要python 安装code
-HTML-CSS-JS Prettify 插件
+==HTML-CSS-JS Prettify 插件
      功能说明：HTML、CSS、JS格式化。
-LiveReload 插件
+--LiveReload 插件
      功能说明：调试网页实时自动更新。
-CSScomb
+==CSScomb
 格式化css折叠或展开
-IMESupport
+--IMESupport--失效
 支持中文打字的光标跟随(自己按)
-AutoPEP8（）
+==AutoPEP8（）
 格式化Python代码。
 
 
@@ -46,8 +46,11 @@ AutoPEP8（）
 ==Ctags
 函数跳转，我的电脑上是Alt+点击 函数名称，会跳转到相应的函数
 
-transparency 
+--transparency 
 透明效果
+
+==vue
+   ==Vue Syntax Highlight 代码高亮
 
 
 
