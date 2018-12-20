@@ -4,7 +4,7 @@
 浏览器浏览
 ==html5
 支持hmtl5规范的插件包
-==jQuery
+--jQuery
 支持JQuery规范的插件包
 --JSFormat
 JS代码格式化插件。
@@ -13,7 +13,7 @@ JS代码格式化插件。
 
 
 
-==ChineseLocalizations
+--ChineseLocalizations
 汉化
 == Doc​Blockr
 注释插件，生成幽美的注释。标准的注释，包括函数名、参数、返回值等，并以多行显示，省去手动编写。
